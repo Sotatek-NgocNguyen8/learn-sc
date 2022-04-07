@@ -1,2 +1,4 @@
 ./node_modules
 /phase1/node_modules
+/phase1/.env
+/phase1/package-lock.json
