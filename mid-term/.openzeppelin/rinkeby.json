@@ -1,0 +1,224 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xF5097833B3a937DE8050F6183Da6b4c029c52705",
+    "txHash": "0x2a196f5e843bb95deb5e63431aef5c66d2d6505f6af6a5601ee95bd5a70893f2"
+  },
+  "proxies": [
+    {
+      "address": "0xCE8916E22cb42c706B9642e40A9D45c5bC34b575",
+      "txHash": "0xb36d24a434289fdb3bd0fe68b9aba5cb5b2ab2241dff991c59685a82a0ce2db5",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "b737994ee216e2370842281f86c24e4d6b068424ff4d2b9c7262f79a10378902": {
+      "address": "0x8AE9E5c9De9Ff64b9b837193AA65E8ef276A7dE1",
+      "txHash": "0x9ce77264b1a4ebf6e7385a68d58c7df4a31a4c5aa97ee130d1e9d4751159e1e3",
+      "layout": {
+        "storage": [
+          {
+            "label": "orders",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_struct(Counter)5_storage",
+            "contract": "MarketplaceV1",
+            "src": "contracts/MarketplaceV1.sol:18"
+          },
+          {
+            "label": "idToOrder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_struct(Order)132_storage)",
+            "contract": "MarketplaceV1",
+            "src": "contracts/MarketplaceV1.sol:30"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_struct(Order)132_storage)": {
+            "label": "mapping(uint256 => struct MarketplaceV1.Order)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)5_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Order)132_storage": {
+            "label": "struct MarketplaceV1.Order",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "seller",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "sold",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "c7bdcf278c09db32eca5fa90999e88cb10491ec03a766e424071141853714fa7": {
+      "address": "0xE8Ac3d16Abc4cfc7d02DE340637320F6BEaa60fd",
+      "txHash": "0x15e663c0c0f124e06d9f357f855ad1b24daeafff68c6039770fc78ee4a3e67f3",
+      "layout": {
+        "storage": [
+          {
+            "label": "orders",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_struct(Counter)5_storage",
+            "contract": "MarketplaceV2",
+            "src": "contracts/MarketplaceV2.sol:18"
+          },
+          {
+            "label": "idToOrder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_struct(Order)141_storage)",
+            "contract": "MarketplaceV2",
+            "src": "contracts/MarketplaceV2.sol:20"
+          },
+          {
+            "label": "fee",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "MarketplaceV2",
+            "src": "contracts/MarketplaceV2.sol:22"
+          },
+          {
+            "label": "treasury",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "MarketplaceV2",
+            "src": "contracts/MarketplaceV2.sol:23"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_struct(Order)141_storage)": {
+            "label": "mapping(uint256 => struct MarketplaceV2.Order)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)5_storage": {
+            "label": "struct Counters.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(Order)141_storage": {
+            "label": "struct MarketplaceV2.Order",
+            "members": [
+              {
+                "label": "tokenId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "seller",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "sold",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
